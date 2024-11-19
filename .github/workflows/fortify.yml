@@ -62,7 +62,9 @@ jobs:
           FOD_TENANT: ${{secrets.FOD_TENANT}}
           FOD_USER: ${{secrets.FOD_USER}}
           FOD_PASSWORD: ${{secrets.FOD_PASSWORD}}
-          FOD_RELEASE: 1316113
+          FOD_RELEASE: 1316329
+          EXTRA_PACKAGE_OPTS: -bt none
+          DO_EXPORT: true
           ### Optional configuration when integrating with Fortify on Demand
           # EXTRA_PACKAGE_OPTS: -oss                       # Extra 'scancentral package' options, like '-oss'' if
                                                            # Debricked SCA scan is enabled on Fortify on Demand
