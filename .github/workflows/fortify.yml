@@ -64,6 +64,7 @@ jobs:
           FOD_PASSWORD: ${{secrets.FOD_PASSWORD}}
           FOD_RELEASE: 1316329
           EXTRA_PACKAGE_OPTS: -bt none
+          DO_WAIT: true
           DO_EXPORT: true
           ### Optional configuration when integrating with Fortify on Demand
           # EXTRA_PACKAGE_OPTS: -oss                       # Extra 'scancentral package' options, like '-oss'' if
