@@ -53,7 +53,7 @@ jobs:
       # and run them directly from within your pipeline; see https://github.com/fortify/github-action#readme for
       # details.
       - name: Run FoD SAST Scan
-        uses: fortify/github-action@a92347297e02391b857e7015792cd1926a4cd418
+        uses: fortify/github-action@v1
         with:
           sast-scan: true
         env:
@@ -62,7 +62,7 @@ jobs:
           FOD_TENANT: ${{secrets.FOD_TENANT}}
           FOD_USER: ${{secrets.FOD_USER}}
           FOD_PASSWORD: ${{secrets.FOD_PASSWORD}}
-          FOD_RELEASE: 1316329
+          FOD_RELEASE: ${{secrets.FOD_RELEASE_ID}}
           EXTRA_PACKAGE_OPTS: -bt none
           DO_WAIT: true
           DO_EXPORT: true
