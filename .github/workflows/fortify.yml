@@ -66,6 +66,7 @@ jobs:
           EXTRA_PACKAGE_OPTS: -bt none
           DO_WAIT: true
           DO_EXPORT: true
+          DO_PR_COMMENT: true
           ### Optional configuration when integrating with Fortify on Demand
           # EXTRA_PACKAGE_OPTS: -oss                       # Extra 'scancentral package' options, like '-oss'' if
                                                            # Debricked SCA scan is enabled on Fortify on Demand
